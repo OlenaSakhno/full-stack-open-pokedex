@@ -1,0 +1,27 @@
+name: One more Workflow on push!
+
+on:
+  push:
+    branches:
+      - master
+      # note that your "main" branch might be called main instead of master
+
+jobs:
+  job_One:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Say hello (job One)
+        run: |
+          echo "Hello from job One!"
+      - name: Step 2 (job One)
+        run: |
+          echo "Hello World again from job One!"
+  job_Two:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Say hello (job Two)
+        run: |
+          echo "Hello from job Two!"
+      - name: Step 2 (job Two)
+        run: |
+          echo "Hello World again from job Two!"
