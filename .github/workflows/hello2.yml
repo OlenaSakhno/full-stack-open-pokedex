@@ -3,7 +3,7 @@ name: One more Workflow on push!
 on:
   push:
     branches:
-      - master
+      - main
       # note that your "main" branch might be called main instead of master
 
 jobs:
@@ -27,10 +27,10 @@ jobs:
           echo "Hello World again from job Two!"
       - name: Date
         run: |
-          echo "Date=>" DATE
+          echo "Date=> ${date}"
       - name: Directory
         run: |
-          echo "Directory=>" LS
+          echo "Directory=> ${ls-l}"
       - name: Step for test
         run: |
           echo "Test"
