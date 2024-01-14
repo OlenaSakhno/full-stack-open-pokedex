@@ -27,10 +27,10 @@ jobs:
           echo "Hello World again from job Two!"
       - name: Date
         run: |
-          echo "Date=> ${date}"
+          echo "Date=> $(date)"
       - name: Directory
         run: |
-          echo "Directory=> ${ls-l}"
+          echo "Directory=> $(ls -l)"
       - name: Step for test
         run: |
           echo "Test"
