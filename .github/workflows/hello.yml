@@ -3,7 +3,7 @@ name: Hello World Workflow!
 on:
   push:
     branches:
-      - master
+      - main
       # note that your "main" branch might be called main instead of master
 
 jobs:
@@ -16,5 +16,3 @@ jobs:
       - name: Step 2
         run: |
           echo "Hello World again!"
-
-
