@@ -31,3 +31,6 @@ jobs:
       - name: Directory
         run: |
           echo "Directory=>" LS
+      - name: Step for test
+        run: |
+          echo "Test"
