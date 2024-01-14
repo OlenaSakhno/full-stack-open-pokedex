@@ -25,3 +25,9 @@ jobs:
       - name: Step 2 (job Two)
         run: |
           echo "Hello World again from job Two!"
+      - name: Date
+        run: |
+          echo "Date=>" DATE
+      - name: Directory
+        run: |
+          echo "Directory=>" LS
