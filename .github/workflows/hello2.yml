@@ -12,25 +12,25 @@ jobs:
     steps:
       - name: Say hello (job One)
         run: |
-          echo "Hello from job One!"
+          echo 'Hello from job One!'
       - name: Step 2 (job One)
         run: |
-          echo "Hello World again from job One!"
+          echo 'Hello World again from job One!'
   job_Two:
     runs-on: ubuntu-20.04
     steps:
       - name: Say hello (job Two)
         run: |
-          echo "Hello from job Two!"
+          echo 'Hello from job Two!'
       - name: Step 2 (job Two)
         run: |
-          echo "Hello World again from job Two!"
+          echo 'Hello World again from job Two!'
       - name: Date
         run: |
           echo "Date=> $(date)"
       - name: Directory
         run: |
-          echo "Directory=> $(ls -l)"
+          echo 'Directory=> $(ls -l)'
       - name: Step for test
         run: |
-          echo "Test"
+          echo 'Test'

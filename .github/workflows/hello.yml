@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Say hello
         run: |
-          echo "Hello World!"
+          echo 'Hello World!'
       - name: Step 2
         run: |
-          echo "Hello World again!"
+          echo 'Hello World again!'
